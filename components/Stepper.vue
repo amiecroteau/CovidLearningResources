@@ -1,9 +1,10 @@
 <template>
+  <v-layout sm12 md8 lg12>
   <v-stepper non-linear>
     <v-stepper-header  class="headline pa-5">
       Select the Student Age group.
     </v-stepper-header>
-    <v-stepper-step color="teal" editable step="1">
+    <v-stepper-step color="teal" width="100px" editable step="1" alt-labels>
       Elementary
     </v-stepper-step>
   <v-divider></v-divider>
@@ -120,7 +121,7 @@
       </v-card>
     </v-stepper-content>
 
-    <v-stepper-step color="teal" editable step="2">Middle School</v-stepper-step>
+    <v-stepper-step color="teal" editable step="2" alt-labels>Middle School</v-stepper-step>
 
     <v-stepper-content step="2">
       <v-card dark color="teal" class="mb-12 pa-2" elevation="11">
@@ -171,7 +172,7 @@
       </v-card>
     </v-stepper-content>
 
-    <v-stepper-step color="teal" editable  step="3">High School</v-stepper-step>
+    <v-stepper-step color="teal" editable  step="3" alt-labels>High School</v-stepper-step>
 
     <v-stepper-content step="3">
     <v-card dark color="teal" class="mb-12 pa-2" elevation="11">
@@ -221,9 +222,8 @@
     </v-card>
     </v-stepper-content>
 
-    <v-stepper-step color="teal" editable  step="4">College</v-stepper-step>
-    <v-stepper-content step="4">
-    <v-card dark color="teal" class="mb-12 pa-2" elevation="11">
+    <v-stepper-step color="teal" editable  step="4" alt-labels>College</v-stepper-step>
+    <v-stepper-content step="4">    <v-card dark color="teal" class="mb-12 pa-2" elevation="11">
 
       <link-prevue
           url="https://blog.coursera.org/coursera-together-free-online-learning-during-covid-19/"
@@ -271,7 +271,7 @@
     </v-card>
     </v-stepper-content>
 
-    <v-stepper-step color="teal" editable  step="5">Fitness</v-stepper-step>
+    <v-stepper-step color="teal" editable  step="5" alt-labels>Fitness</v-stepper-step>
     <v-stepper-content step="5">
       <v-card dark color="teal" class="mb-12 pa-2" elevation="11">
         <link-prevue
@@ -369,7 +369,7 @@
       </v-card>
     </v-stepper-content>
 
-     <v-stepper-step color="teal" editable  step="6">Virtual tours</v-stepper-step>
+     <v-stepper-step color="teal" editable  step="6">Virtual Tours</v-stepper-step>
     <v-stepper-content step="6">
      <v-card dark color="teal" class="mb-12 pa-2" elevation="11">
          <link-prevue
@@ -492,6 +492,7 @@
     </v-stepper-content>
 
   </v-stepper>
+  </v-layout>
 </template>
 <script>
 import LinkPrevue from "link-prevue";
@@ -515,3 +516,19 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.v-stepper__step__step .v-icon.v-icon {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  font-size: 0.75rem;
+  justify-content: center;
+  height: 50px;
+  min-width: 55px !important;
+  width: 50px;
+
+}
+  
+
+</style>

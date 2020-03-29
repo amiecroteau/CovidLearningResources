@@ -1,6 +1,6 @@
 <template>
   <v-layout column justify-center align-center>
-    <v-flex lg12>
+    <v-flex>
       <Stepper />
     </v-flex>
   </v-layout>
@@ -26,5 +26,9 @@ export default {
 .contact {
   border-width: 1px;
   border-color: grey;
+}
+.v-stepper_step_step {
+  min-width: 90px;
+  height: 50px;
 }
 </style>
