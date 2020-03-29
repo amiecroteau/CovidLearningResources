@@ -81,7 +81,7 @@
           <template slot-scope="props">
             <div class="card">
               <div class="card-block">
-                </br>
+               <br>
                 <h4 class="card-title">{{ props.title }}</h4>
                 <p class="card-text">{{ props.description }}</p>
                 <v-btn
