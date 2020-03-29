@@ -1,21 +1,7 @@
 <template>
   <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <div class="text-center"></div>
-      <v-card light>
-        <v-card-title class="headline">
-          Unique Learning Resources
-        </v-card-title>
-        <v-card-text>
-          <Stepper />
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
+    <v-flex lg12>
+      <Stepper />
     </v-flex>
   </v-layout>
 </template>
@@ -32,3 +18,13 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.app {
+  background-color: teal;
+}
+.contact {
+  border-width: 1px;
+  border-color: grey;
+}
+</style>

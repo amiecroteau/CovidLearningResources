@@ -51,7 +51,7 @@ export default {
     theme: {
       light: true,
             themes: {
-        dark: {
+        light: {
           primary: colors.amber.lighten1,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
